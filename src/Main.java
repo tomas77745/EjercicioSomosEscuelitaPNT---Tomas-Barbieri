@@ -11,11 +11,13 @@ public class Main {
     public static void main(String[] args) {
 
         Compra compra = new Compra();
-
+        
+        Gaseosa cocaCola = new Gaseosa("Coca-Cola", 18.0, 1.5);
         Gaseosa cocaColaZero = new Gaseosa("Coca-Cola Zero", 20.0 , 1.5);
         Shampoo shampooSedal = new Shampoo("Shampoo Sedal", 19.0 , "500ml");
         Fruta frutillas = new Fruta("Frutillas", 64.0 , "kilo");
 
+        compra.agregarProducto(cocaCola);
         compra.agregarProducto(cocaColaZero);
         compra.agregarProducto(shampooSedal);
         compra.agregarProducto(frutillas);
